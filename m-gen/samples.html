@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131b">
+  <title>MalwareBazaar Metadata Viewer — M-Gen</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #10131b;
+      --panel: #191e29;
+      --line: #30394a;
+      --text: #eef2fa;
+      --muted: #aab4c5;
+      --accent: #ffbd59;
+      --red: #ff777d;
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 32px 18px;
+      color: var(--text);
+      background: radial-gradient(ellipse at 50% 0, #252b3a 0, var(--bg) 62%);
+    }
+    main { width: min(760px, 100%); margin: 0 auto; }
+    a { color: var(--accent); }
+    .eyebrow { margin-top: 22px; color: var(--accent); font-size: .82rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: 8px 0 12px; font-size: clamp(2.3rem, 7vw, 3.8rem); line-height: 1.08; letter-spacing: -.05em; }
+    h2 { margin: 0 0 10px; font-size: 1.25rem; }
+    p { color: var(--muted); }
+    .banner, .sample {
+      margin-top: 22px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: color-mix(in srgb, var(--panel) 90%, transparent);
+    }
+    .banner { border-left: 4px solid var(--red); }
+    .banner strong { color: #ffb0b3; }
+    .sample { min-height: 210px; }
+    .tag { display: inline-block; margin-bottom: 12px; padding: 3px 9px; border: 1px solid #715a35; border-radius: 999px; color: var(--accent); font-size: .8rem; font-weight: 700; }
+    .sample p { margin-bottom: 0; }
+    .controls { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+    label { display: block; margin-top: 22px; font-weight: 700; }
+    textarea {
+      display: block;
+      width: 100%;
+      min-height: 160px;
+      margin-top: 8px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      color: var(--text);
+      background: #0c0f16;
+      font: 13px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
+      resize: vertical;
+    }
+    textarea:focus-visible { outline: 3px solid #ffbd5970; outline-offset: 2px; }
+    dl { display: grid; grid-template-columns: minmax(100px, 150px) 1fr; gap: 8px 14px; margin: 20px 0 0; overflow-wrap: anywhere; }
+    dt { color: var(--muted); font-weight: 700; }
+    dd { margin: 0; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .9rem; }
+    .hint { margin-top: 8px; font-size: .9rem; }
+    button {
+      min-height: 46px;
+      padding: 10px 16px;
+      border: 1px solid var(--accent);
+      border-radius: 9px;
+      color: #20170d;
+      background: var(--accent);
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    button:hover, button:focus-visible { background: #ffd28b; outline: 3px solid #fff4; outline-offset: 3px; }
+    .back { display: inline-block; padding: 10px 2px; }
+    footer { margin-top: 28px; color: #838da0; font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">← Back to disclaimers</a>
+    <div class="eyebrow">Metadata-only viewer</div>
+    <h1>MalwareBazaar metadata</h1>
+    <p>Paste a JSON response from the official MalwareBazaar API, then randomly browse the returned records. This page displays selected text fields only; it does not request, link to, or download sample files.</p>
+
+    <section class="banner" aria-label="Safety notice">
+      <strong>Important:</strong> MalwareBazaar requires an API key for API access. Keep your key private; do not paste it here. Its submission policy says adware should not be submitted, so results may not contain adware. Metadata is untrusted and is not proof that a file is safe or malicious.
+    </section>
+
+    <section class="sample" aria-live="polite" aria-atomic="true">
+      <span class="tag" id="sample-tag">No record loaded</span>
+      <h2 id="sample-name">Paste metadata to begin</h2>
+      <p id="sample-status" role="status">No data has been sent anywhere. This page does not make API or file-download requests.</p>
+      <dl id="sample-details" hidden>
+        <dt>SHA-256</dt><dd id="sample-hash"></dd>
+        <dt>Family/signature</dt><dd id="sample-family"></dd>
+        <dt>File type</dt><dd id="sample-type"></dd>
+        <dt>First seen (UTC)</dt><dd id="sample-seen"></dd>
+        <dt>File name</dt><dd id="sample-filename"></dd>
+        <dt>Tags</dt><dd id="sample-tags"></dd>
+      </dl>
+    </section>
+
+    <label for="metadata-input">Paste a MalwareBazaar API JSON response</label>
+    <textarea id="metadata-input" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder='{"query_status":"ok","data":[{"sha256_hash":"…","signature":"…"}]}'></textarea>
+    <p class="hint">Only metadata fields are read. Input is rendered as plain text; no pasted content is executed. The JSON is kept in this tab’s memory only.</p>
+
+    <div class="controls">
+      <button id="load-metadata" type="button">Load metadata</button>
+      <button id="another" type="button" disabled>Show random record</button>
+    </div>
+
+    <footer>
+      API use requires your own key from the <a href="https://auth.abuse.ch/" target="_blank" rel="noopener noreferrer">abuse.ch authentication portal</a>. See the <a href="https://bazaar.abuse.ch/api/" target="_blank" rel="noopener noreferrer">official API documentation and submission policy</a>. This viewer never asks for your key. Metadata only; no binaries, download links, or executable content. M-Gen is independent and is not affiliated with abuse.ch or Enderman. See the <a href="index.html">full disclaimers</a>.
+    </footer>
+  </main>
+  <script>
+    const records = [];
+    let previousIndex = -1;
+
+    function showRandomRecord() {
+      let index = Math.floor(Math.random() * records.length);
+      if (records.length > 1 && index === previousIndex) {
+        index = (index + 1 + Math.floor(Math.random() * (records.length - 1))) % records.length;
+      }
+      previousIndex = index;
+      const record = records[index];
+      document.getElementById("sample-tag").textContent = "Metadata record " + (index + 1) + " of " + records.length;
+      document.getElementById("sample-name").textContent = record.signature || "Unclassified record";
+      document.getElementById("sample-status").textContent = "Metadata only. No sample file has been requested or downloaded.";
+      document.getElementById("sample-hash").textContent = record.sha256;
+      document.getElementById("sample-family").textContent = record.signature || "Not provided";
+      document.getElementById("sample-type").textContent = record.file_type || "Not provided";
+      document.getElementById("sample-seen").textContent = record.first_seen || "Not provided";
+      document.getElementById("sample-filename").textContent = record.file_name || "Not provided";
+      document.getElementById("sample-tags").textContent = record.tags.length ? record.tags.join(", ") : "None provided";
+      document.getElementById("sample-details").hidden = false;
+    }
+
+    document.getElementById("load-metadata").addEventListener("click", () => {
+      const status = document.getElementById("sample-status");
+      const input = document.getElementById("metadata-input").value;
+      const randomButton = document.getElementById("another");
+      document.getElementById("sample-details").hidden = true;
+      document.getElementById("sample-tag").textContent = "Metadata import";
+      document.getElementById("sample-name").textContent = "Checking JSON…";
+      randomButton.disabled = true;
+
+      if (input.length > 2_000_000) {
+        document.getElementById("sample-name").textContent = "Input is too large";
+        status.textContent = "Paste a response smaller than 2 MB.";
+        return;
+      }
+
+      let payload;
+      try {
+        payload = JSON.parse(input);
+      } catch {
+        document.getElementById("sample-name").textContent = "Invalid JSON";
+        status.textContent = "Could not parse the pasted response. Check that it is valid JSON.";
+        return;
+      }
+
+      const data = Array.isArray(payload) ? payload : payload && Array.isArray(payload.data) ? payload.data : [];
+      const validRecords = data.filter(record =>
+        record &&
+        typeof record.sha256_hash === "string" &&
+        /^[a-f\d]{64}$/i.test(record.sha256_hash)
+      ).map(record => ({
+        sha256: record.sha256_hash,
+        signature: typeof record.signature === "string" ? record.signature : "",
+        file_type: typeof record.file_type === "string" ? record.file_type : "",
+        first_seen: typeof record.first_seen === "string" ? record.first_seen : "",
+        file_name: typeof record.file_name === "string" ? record.file_name : "",
+        tags: Array.isArray(record.tags) ? record.tags.filter(tag => typeof tag === "string") : []
+      }));
+
+      if (validRecords.length === 0) {
+        document.getElementById("sample-name").textContent = "No usable records found";
+        status.textContent = "Expected a MalwareBazaar JSON response with a data array containing SHA-256 metadata.";
+        return;
+      }
+
+      records.splice(0, records.length, ...validRecords);
+      previousIndex = -1;
+      randomButton.disabled = false;
+      showRandomRecord();
+    });
+
+    document.getElementById("another").addEventListener("click", showRandomRecord);
+  </script>
+</body>
+</html>

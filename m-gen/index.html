@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131b">
+  <title>M-Gen — Metadata-Only Viewer</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #10131b;
+      --panel: #191e29;
+      --line: #30394a;
+      --text: #eef2fa;
+      --muted: #aab4c5;
+      --accent: #ffbd59;
+      --red: #ff777d;
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 32px 18px;
+      display: grid;
+      place-items: center;
+      color: var(--text);
+      background: radial-gradient(ellipse at 50% 0, #252b3a 0, var(--bg) 62%);
+    }
+    main { width: min(760px, 100%); }
+    .eyebrow { color: var(--accent); font-size: .82rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: 8px 0 12px; font-size: clamp(2.5rem, 8vw, 4.5rem); line-height: 1; letter-spacing: -.06em; }
+    h2 { margin: 0 0 10px; font-size: 1.15rem; }
+    p { margin: 0 0 14px; color: var(--muted); }
+    .intro { font-size: 1.1rem; }
+    .notice, .disclaimer {
+      margin-top: 22px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: color-mix(in srgb, var(--panel) 90%, transparent);
+    }
+    .notice { border-left: 4px solid var(--red); }
+    .notice h2 { color: #ffb0b3; }
+    .disclaimer h2 { color: var(--accent); }
+    ul { margin: 0; padding-left: 22px; color: var(--muted); }
+    li + li { margin-top: 8px; }
+    .action { display: inline-flex; margin-top: 24px; padding: 12px 19px; border-radius: 9px; color: #20170d; background: var(--accent); font-weight: 800; text-decoration: none; }
+    .action:hover, .action:focus-visible { background: #ffd28b; outline: 3px solid #fff4; outline-offset: 3px; }
+    footer { margin-top: 25px; color: #838da0; font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">A harmless metadata viewer</div>
+    <h1>M-Gen</h1>
+    <p class="intro">Browse MalwareBazaar metadata in a text-only format. This is not a malware generator or a place to get malware samples.</p>
+
+    <section class="notice" aria-labelledby="warning-title">
+      <h2 id="warning-title">Important: read before continuing</h2>
+      <p>Nothing on this site creates, hosts, links to, or downloads malware. The viewer only displays selected metadata from JSON that you paste into it. It never requests sample files or asks for your API key.</p>
+    </section>
+
+    <section class="disclaimer" aria-labelledby="disclaimer-title">
+      <h2 id="disclaimer-title">Disclaimers &amp; scope</h2>
+      <ul>
+        <li>This project is for harmless demonstration and general cybersecurity awareness. It is not a security product, antivirus scanner, or malware-analysis service.</li>
+        <li>Metadata may describe real malware records. It is not a file, an analysis report, or proof that any file is safe or malicious.</li>
+        <li>MalwareBazaar requires an API key for API access. Keep your key private; this site does not ask for or handle it. Use the official API according to its terms.</li>
+        <li>MalwareBazaar's submission policy says adware should not be submitted, so its records may not contain adware.</li>
+        <li>No executable files, scripts, exploit code, tracking, pop-up ads, or third-party sample repositories are provided by this demo.</li>
+        <li>Do not use adware or unwanted software to advertise, monitor, deceive, or interfere with anyone’s device or browsing.</li>
+        <li>Do not download or run unknown files. If you are researching real malware, use reputable sources, follow your organization’s policies, and work only in a properly isolated, authorized environment.</li>
+        <li>The site is provided “as is,” without warranties. The authors are not responsible for decisions made based on this fictional content.</li>
+        <li>This is an independent fan-made concept inspired by the general idea of a malware-generator-themed project. It is not affiliated with, endorsed by, or a copy of Enderman or any other creator.</li>
+      </ul>
+    </section>
+
+    <a class="action" href="samples.html">I understand — open metadata viewer</a>
+    <footer>By continuing, you acknowledge this page displays metadata only and does not provide malware sample files.</footer>
+  </main>
+</body>
+</html>
