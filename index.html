@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alcazar</title>
+<link rel="icon" href="img/logo.svg">
+<link rel="stylesheet" href="css/ide.css">
+</head>
+<body>
+<div id="app">
+  <header id="top">
+    <div class="brand"><img src="img/logo.svg" alt=""><span>Alcazar</span></div>
+    <div class="tb">
+      <button id="bNew" class="tool" title="New project"><i data-ic="file"></i>New</button>
+      <button id="bOpen" class="tool" title="Open project (Ctrl+O)"><i data-ic="open"></i>Open</button>
+      <button id="bSave" class="tool" title="Save (Ctrl+S). Right-click: Save As"><i data-ic="save"></i>Save</button>
+      <span class="sep"></span>
+      <button id="bUndo" class="tool icon" title="Undo (Ctrl+Z)"><i data-ic="undo"></i></button>
+      <button id="bRedo" class="tool icon" title="Redo (Ctrl+Y)"><i data-ic="redo"></i></button>
+    </div>
+    <div class="tb center">
+      <button id="bPlay" class="play" title="Play (F5)"><i data-ic="play"></i>Play</button>
+      <button id="bStop" class="stop" title="Stop (Esc)"><i data-ic="stop"></i>Stop</button>
+    </div>
+    <div class="tb right">
+      <span id="projName" class="proj"></span>
+      <button id="bExport" class="primary" title="Make a .exe or web page"><i data-ic="export"></i>Export</button>
+      <button id="bHelp" class="tool icon" title="How Alcazar works"><i data-ic="help"></i></button>
+    </div>
+  </header>
+
+  <div id="main">
+    <aside id="left">
+      <section class="panel">
+        <div class="ph"><span>Scenes</span><button id="bAddScene" class="tool icon" title="Add a scene"><i data-ic="plus"></i></button></div>
+        <div id="scenes"></div>
+      </section>
+      <section class="panel grow">
+        <div class="ph"><span>Objects</span><button id="bAdd" class="accent" title="Add an object"><i data-ic="plus"></i>Add</button></div>
+        <div id="tree" class="scroll"></div>
+      </section>
+      <section class="panel">
+        <div class="ph"><span>Variables</span><button id="bAddVar" class="tool icon" title="Add a shared variable"><i data-ic="plus"></i></button></div>
+        <div id="vars" class="scroll small"></div>
+      </section>
+      <section class="panel">
+        <div class="ph"><span>Assets</span><button id="bImport" class="tool" title="Import pictures, sounds and fonts (or drop files on the window)">Import</button></div>
+        <div id="assets" class="scroll small"></div>
+      </section>
+    </aside>
+
+    <section id="center">
+      <div id="tabs">
+        <button data-tab="scene" class="on"><i data-ic="scene"></i>Scene</button>
+        <button data-tab="script"><i data-ic="code"></i>Script</button>
+        <button data-tab="game"><i data-ic="game"></i>Game</button>
+        <div id="scriptModes" class="seg" title="Three ways to write the same program">
+          <button data-mode="flow"><i data-ic="flow" data-size="14"></i>Flow</button>
+          <button data-mode="blocks"><i data-ic="blocks" data-size="14"></i>Blocks</button>
+          <button data-mode="text"><i data-ic="text" data-size="14"></i>Text</button>
+        </div>
+        <span id="scriptFor"></span>
+        <span id="fps"></span>
+      </div>
+      <div id="views">
+        <div id="tabScene" class="tab" tabindex="0"></div>
+        <div id="tabScript" class="tab" style="display:none">
+          <div id="edFlow" class="ed"></div>
+          <div id="edBlocks" class="ed"></div>
+          <div id="edText" class="ed"></div>
+        </div>
+        <div id="tabGame" class="tab" style="display:none">
+          <div id="gameStage" tabindex="0"></div>
+          <div id="gameIdle"><p>Press <b>Play</b> (F5) to test your game here.</p></div>
+        </div>
+      </div>
+      <div id="console">
+        <div class="ch"><button id="bConsole" class="ghost" title="Show / hide">Console</button><span class="grow"></span><button id="bClear" class="ghost">Clear</button></div>
+        <div id="consoleBody"></div>
+      </div>
+    </section>
+
+    <aside id="right">
+      <div class="ph"><span>Inspector</span></div>
+      <div id="inspector" class="scroll"></div>
+    </aside>
+  </div>
+</div>
+<div id="start"></div>
+
+<script src="js/icons.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/widgets.js"></script>
+<script src="js/flow.js"></script>
+<script src="js/blocks.js"></script>
+<script src="js/textmode.js"></script>
+<script src="js/viewport.js"></script>
+<script src="js/samples.js"></script>
+<script src="js/host.js"></script>
+<script src="js/ide.js"></script>
+</body>
+</html>
