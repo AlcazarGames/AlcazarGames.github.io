@@ -111,10 +111,11 @@
     <div class="controls">
       <button id="load-metadata" type="button">Load metadata</button>
       <button id="another" type="button" disabled>Show random record</button>
+      <button id="download-metadata" type="button" disabled>Download metadata JSON</button>
     </div>
 
     <footer>
-      API use requires your own key from the <a href="https://auth.abuse.ch/" target="_blank" rel="noopener noreferrer">abuse.ch authentication portal</a>. See the <a href="https://bazaar.abuse.ch/api/" target="_blank" rel="noopener noreferrer">official API documentation and submission policy</a>. This viewer never asks for your key. Metadata only; no binaries, download links, or executable content. M-Gen is independent and is not affiliated with abuse.ch or Enderman. See the <a href="index.html">full disclaimers</a>.
+      API use requires your own key from the <a href="https://auth.abuse.ch/" target="_blank" rel="noopener noreferrer">abuse.ch authentication portal</a>. See the <a href="https://bazaar.abuse.ch/api/" target="_blank" rel="noopener noreferrer">official API documentation and submission policy</a>. This viewer never asks for your key. Its download button exports only the metadata you imported; it offers no binaries or sample download links. M-Gen is independent and is not affiliated with abuse.ch or Enderman. See the <a href="index.html">full disclaimers</a>.
     </footer>
   </main>
   <script>
@@ -144,10 +145,13 @@
       const status = document.getElementById("sample-status");
       const input = document.getElementById("metadata-input").value;
       const randomButton = document.getElementById("another");
+      records.length = 0;
+      previousIndex = -1;
       document.getElementById("sample-details").hidden = true;
       document.getElementById("sample-tag").textContent = "Metadata import";
       document.getElementById("sample-name").textContent = "Checking JSON…";
       randomButton.disabled = true;
+      document.getElementById("download-metadata").disabled = true;
 
       if (input.length > 2_000_000) {
         document.getElementById("sample-name").textContent = "Input is too large";
@@ -187,10 +191,29 @@
       records.splice(0, records.length, ...validRecords);
       previousIndex = -1;
       randomButton.disabled = false;
+      document.getElementById("download-metadata").disabled = false;
       showRandomRecord();
     });
 
     document.getElementById("another").addEventListener("click", showRandomRecord);
+    document.getElementById("download-metadata").addEventListener("click", () => {
+      if (records.length === 0) return;
+
+      const exportData = {
+        source: "User-pasted MalwareBazaar metadata",
+        exported_at: new Date().toISOString(),
+        data: records
+      };
+      const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "m-gen-metadata.json";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
   </script>
 </body>
 </html>
