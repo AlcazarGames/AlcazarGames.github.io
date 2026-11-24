@@ -26,7 +26,7 @@
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>&#xFFFC;</string>
+						<string></string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -444,7 +444,7 @@
 											</dict>
 										</dict>
 										<key>string</key>
-										<string>&#xFFFC;</string>
+										<string></string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -480,7 +480,7 @@
 											</dict>
 										</dict>
 										<key>string</key>
-										<string>&#xFFFC;</string>
+										<string></string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -535,7 +535,7 @@
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>&#xFFFC;.shortcut</string>
+						<string>.shortcut</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -834,7 +834,7 @@ completion();&lt;/string&gt;
 											</dict>
 										</dict>
 										<key>string</key>
-										<string>&#xFFFC;</string>
+										<string></string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -870,7 +870,7 @@ completion();&lt;/string&gt;
 											</dict>
 										</dict>
 										<key>string</key>
-										<string>&#xFFFC;</string>
+										<string></string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -925,7 +925,7 @@ completion();&lt;/string&gt;
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>&#xFFFC;.shortcut</string>
+						<string>.shortcut</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -1181,7 +1181,7 @@ completion();&lt;/string&gt;
 											</dict>
 										</dict>
 										<key>string</key>
-										<string>&#xFFFC;</string>
+										<string></string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -1217,7 +1217,7 @@ completion();&lt;/string&gt;
 											</dict>
 										</dict>
 										<key>string</key>
-										<string>&#xFFFC;</string>
+										<string></string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -1272,7 +1272,7 @@ completion();&lt;/string&gt;
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>&#xFFFC;.shortcut</string>
+						<string>.shortcut</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -2061,7 +2061,7 @@ completion();&lt;/string&gt;
 											</dict>
 										</dict>
 										<key>string</key>
-										<string>&#xFFFC;</string>
+										<string></string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -2097,7 +2097,7 @@ completion();&lt;/string&gt;
 											</dict>
 										</dict>
 										<key>string</key>
-										<string>&#xFFFC;</string>
+										<string></string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -2152,7 +2152,7 @@ completion();&lt;/string&gt;
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>&#xFFFC;.shortcut</string>
+						<string>.shortcut</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -2566,7 +2566,7 @@ completion();&lt;/string&gt;
 											</dict>
 										</dict>
 										<key>string</key>
-										<string>&#xFFFC;</string>
+										<string></string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -2602,7 +2602,7 @@ completion();&lt;/string&gt;
 											</dict>
 										</dict>
 										<key>string</key>
-										<string>&#xFFFC;</string>
+										<string></string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -2657,7 +2657,7 @@ completion();&lt;/string&gt;
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>&#xFFFC;.shortcut</string>
+						<string>.shortcut</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -2807,7 +2807,7 @@ completion();&lt;/string&gt;
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>&#xFFFC;</string>
+						<string></string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
