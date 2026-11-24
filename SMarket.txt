@@ -1,0 +1,2867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFQuickActionSurfaces</key>
+	<array/>
+	<key>WFWorkflowActions</key>
+	<array>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>43A109F7-2292-4CF0-9D1A-BAE4FD04DC85</string>
+				<key>WFTextActionText</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>ExtensionInput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>&#xFFFC;</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setvariable</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>43A109F7-2292-4CF0-9D1A-BAE4FD04DC85</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFVariableName</key>
+				<string>Input</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>C5F56922-625E-4ED0-B144-6D6A2E3CB498</string>
+				<key>WFConditions</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFActionParameterFilterPrefix</key>
+						<integer>1</integer>
+						<key>WFActionParameterFilterTemplates</key>
+						<array>
+							<dict>
+								<key>WFCondition</key>
+								<integer>5</integer>
+								<key>WFConditionalActionString</key>
+								<string>PosterBoard</string>
+								<key>WFInput</key>
+								<dict>
+									<key>Type</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<dict>
+										<key>Value</key>
+										<dict>
+											<key>Type</key>
+											<string>Variable</string>
+											<key>VariableName</key>
+											<string>Input</string>
+										</dict>
+										<key>WFSerializationType</key>
+										<string>WFTextTokenAttachment</string>
+									</dict>
+								</dict>
+							</dict>
+							<dict>
+								<key>WFCondition</key>
+								<integer>5</integer>
+								<key>WFConditionalActionString</key>
+								<string>Edit Website</string>
+								<key>WFInput</key>
+								<dict>
+									<key>Type</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<dict>
+										<key>Value</key>
+										<dict>
+											<key>Type</key>
+											<string>Variable</string>
+											<key>VariableName</key>
+											<string>Input</string>
+										</dict>
+										<key>WFSerializationType</key>
+										<string>WFTextTokenAttachment</string>
+									</dict>
+								</dict>
+							</dict>
+							<dict>
+								<key>WFCondition</key>
+								<integer>5</integer>
+								<key>WFConditionalActionString</key>
+								<string>Simple AdBlock</string>
+								<key>WFInput</key>
+								<dict>
+									<key>Type</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<dict>
+										<key>Value</key>
+										<dict>
+											<key>Type</key>
+											<string>Variable</string>
+											<key>VariableName</key>
+											<string>Input</string>
+										</dict>
+										<key>WFSerializationType</key>
+										<string>WFTextTokenAttachment</string>
+									</dict>
+								</dict>
+							</dict>
+							<dict>
+								<key>WFCondition</key>
+								<integer>5</integer>
+								<key>WFConditionalActionString</key>
+								<string>Dark Mode</string>
+								<key>WFInput</key>
+								<dict>
+									<key>Type</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<dict>
+										<key>Value</key>
+										<dict>
+											<key>Type</key>
+											<string>Variable</string>
+											<key>VariableName</key>
+											<string>Input</string>
+										</dict>
+										<key>WFSerializationType</key>
+										<string>WFTextTokenAttachment</string>
+									</dict>
+								</dict>
+							</dict>
+						</array>
+						<key>WFContentPredicateBoundedDate</key>
+						<false/>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFContentPredicateTableTemplate</string>
+				</dict>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>632883AC-B9F4-4A75-8191-87B8448E6336</string>
+				<key>WFTextActionText</key>
+				<string>data:text/html;charset=utf-8, %3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22UTF-8%22%20%2F%3E%0A%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%2C%20maximum-scale%3D1.0%2C%20user-scalable%3Dno%22%20%2F%3E%0A%20%20%3Ctitle%3EShortcut%20Market%3C%2Ftitle%3E%0A%20%20%3Cstyle%3E%0A%20%20%20%20%3Aroot%20%7B%0A%20%20%20%20%20%20--bg%3A%20%23000000%3B%0A%20%20%20%20%20%20--card%3A%20%231c1c1e%3B%0A%20%20%20%20%20%20--card-press%3A%20%232c2c2e%3B%0A%20%20%20%20%20%20--text%3A%20%23ffffff%3B%0A%20%20%20%20%20%20--subtext%3A%20%2398989d%3B%0A%20%20%20%20%20%20--border%3A%20rgba%28235%2C%20235%2C%20245%2C%200.14%29%3B%0A%20%20%20%20%20%20--accent%3A%20%230a84ff%3B%0A%20%20%20%20%20%20--accent-soft%3A%20rgba%2810%2C%20132%2C%20255%2C%200.18%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2A%20%7B%0A%20%20%20%20%20%20box-sizing%3A%20border-box%3B%0A%20%20%20%20%20%20-webkit-tap-highlight-color%3A%20transparent%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20body%20%7B%0A%20%20%20%20%20%20margin%3A%200%3B%0A%20%20%20%20%20%20padding%3A%2020px%2016px%2040px%3B%0A%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22SF%20Pro%20Text%22%2C%20%22Helvetica%20Neue%22%2C%20sans-serif%3B%0A%20%20%20%20%20%20background%3A%20var%28--bg%29%3B%0A%20%20%20%20%20%20color%3A%20var%28--text%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20max-width%3A%20540px%3B%0A%20%20%20%20%20%20margin%3A%200%20auto%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.header%20%7B%0A%20%20%20%20%20%20margin-bottom%3A%2018px%3B%0A%20%20%20%20%20%20padding%3A%204px%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.header%20h1%20%7B%0A%20%20%20%20%20%20margin%3A%200%200%206px%3B%0A%20%20%20%20%20%20font-size%3A%2024px%3B%0A%20%20%20%20%20%20font-weight%3A%20700%3B%0A%20%20%20%20%20%20letter-spacing%3A%20-0.02em%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.header%20p%20%7B%0A%20%20%20%20%20%20margin%3A%200%3B%0A%20%20%20%20%20%20font-size%3A%2015px%3B%0A%20%20%20%20%20%20color%3A%20var%28--subtext%29%3B%0A%20%20%20%20%20%20line-height%3A%201.35%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.section%20%7B%0A%20%20%20%20%20%20background%3A%20var%28--card%29%3B%0A%20%20%20%20%20%20border-radius%3A%2014px%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var%28--border%29%3B%0A%20%20%20%20%20%20margin-bottom%3A%2012px%3B%0A%20%20%20%20%20%20overflow%3A%20hidden%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.section-toggle%20%7B%0A%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20background%3A%20transparent%3B%0A%20%20%20%20%20%20border%3A%200%3B%0A%20%20%20%20%20%20padding%3A%2015px%2016px%3B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20justify-content%3A%20space-between%3B%0A%20%20%20%20%20%20color%3A%20var%28--text%29%3B%0A%20%20%20%20%20%20font-size%3A%2016px%3B%0A%20%20%20%20%20%20font-weight%3A%20600%3B%0A%20%20%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20%20%20text-align%3A%20left%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.section-toggle%3Aactive%20%7B%0A%20%20%20%20%20%20background%3A%20var%28--card-press%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.section-left%20%7B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20gap%3A%2010px%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.badge%20%7B%0A%20%20%20%20%20%20font-size%3A%2012px%3B%0A%20%20%20%20%20%20font-weight%3A%20600%3B%0A%20%20%20%20%20%20color%3A%20var%28--accent%29%3B%0A%20%20%20%20%20%20background%3A%20var%28--accent-soft%29%3B%0A%20%20%20%20%20%20padding%3A%203px%208px%3B%0A%20%20%20%20%20%20border-radius%3A%20999px%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.chevron%20%7B%0A%20%20%20%20%20%20font-size%3A%2014px%3B%0A%20%20%20%20%20%20color%3A%20var%28--subtext%29%3B%0A%20%20%20%20%20%20transition%3A%20transform%200.2s%20ease%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.section.open%20.chevron%20%7B%0A%20%20%20%20%20%20transform%3A%20rotate%2890deg%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.section-items%20%7B%0A%20%20%20%20%20%20display%3A%20none%3B%0A%20%20%20%20%20%20border-top%3A%201px%20solid%20var%28--border%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.section.open%20.section-items%20%7B%0A%20%20%20%20%20%20display%3A%20block%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.shortcut-row%20%7B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20justify-content%3A%20space-between%3B%0A%20%20%20%20%20%20padding%3A%2013px%2016px%3B%0A%20%20%20%20%20%20text-decoration%3A%20none%3B%0A%20%20%20%20%20%20color%3A%20var%28--text%29%3B%0A%20%20%20%20%20%20border-bottom%3A%201px%20solid%20var%28--border%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.shortcut-row%3Alast-child%20%7B%0A%20%20%20%20%20%20border-bottom%3A%200%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.shortcut-row%3Aactive%20%7B%0A%20%20%20%20%20%20background%3A%20var%28--card-press%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.shortcut-title%20%7B%0A%20%20%20%20%20%20font-size%3A%2015px%3B%0A%20%20%20%20%20%20font-weight%3A%20500%3B%0A%20%20%20%20%20%20margin-bottom%3A%202px%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.shortcut-desc%20%7B%0A%20%20%20%20%20%20font-size%3A%2013px%3B%0A%20%20%20%20%20%20color%3A%20var%28--subtext%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.launch-pill%20%7B%0A%20%20%20%20%20%20font-size%3A%2012px%3B%0A%20%20%20%20%20%20font-weight%3A%20600%3B%0A%20%20%20%20%20%20color%3A%20var%28--accent%29%3B%0A%20%20%20%20%20%20margin-left%3A%2012px%3B%0A%20%20%20%20%20%20flex-shrink%3A%200%3B%0A%20%20%20%20%7D%0A%20%20%3C%2Fstyle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22header%22%3E%0A%20%20%20%20%20%20%3Ch1%3EWelcome%20to%20Shortcut%20Market%3C%2Fh1%3E%0A%20%20%20%20%20%20%3Cp%3EChoose%20a%20shortcut%20below%3A%3C%2Fp%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22section%20open%22%3E%0A%20%20%20%20%20%20%3Cbutton%20class%3D%22section-toggle%22%20type%3D%22button%22%20onclick%3D%22toggleSection%28this%29%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22section-left%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3EFeatured%20Shortcuts%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22badge%22%3E3%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22chevron%22%3E%E2%96%B8%3C%2Fspan%3E%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-items%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22shortcut-row%22%20href%3D%22shortcuts%3A%2F%2Frun-shortcut%3Fname%3DShortcut%2520Market%26amp%3Binput%3DEdit%2520Website%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22shortcut-title%22%3EEdit%20Website%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22shortcut-desc%22%3EInstall%20via%20Shortcut%20Market%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22launch-pill%22%3EInstall%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22shortcut-row%22%20href%3D%22shortcuts%3A%2F%2Frun-shortcut%3Fname%3DShortcut%2520Market%26amp%3Binput%3DSimple%2520AdBlock%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22shortcut-title%22%3ESimple%20AdBlock%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22shortcut-desc%22%3EInstall%20via%20Shortcut%20Market%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22launch-pill%22%3EInstall%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22shortcut-row%22%20href%3D%22shortcuts%3A%2F%2Frun-shortcut%3Fname%3DShortcut%2520Market%26amp%3Binput%3DDark%2520Mode%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22shortcut-title%22%3EDark%20Mode%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22shortcut-desc%22%3EInstall%20via%20Shortcut%20Market%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22launch-pill%22%3EInstall%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22section%20open%22%3E%0A%20%20%20%20%20%20%3Cbutton%20class%3D%22section-toggle%22%20type%3D%22button%22%20onclick%3D%22toggleSection%28this%29%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22section-left%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3ETrending%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22badge%22%3E1%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22chevron%22%3E%E2%96%B8%3C%2Fspan%3E%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-items%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22shortcut-row%22%20href%3D%22shortcuts%3A%2F%2Frun-shortcut%3Fname%3DShortcut%2520Market%26amp%3Binput%3DPosterBoard%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22shortcut-title%22%3EPosterBoard%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22shortcut-desc%22%3EInstall%20via%20Shortcut%20Market%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22launch-pill%22%3EInstall%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cscript%3E%0A%20%20%20%20function%20toggleSection%28btn%29%20%7B%0A%20%20%20%20%20%20const%20section%20%3D%20btn.closest%28%27.section%27%29%3B%0A%20%20%20%20%20%20section.classList.toggle%28%27open%27%29%3B%0A%20%20%20%20%7D%0A%20%20%3C%2Fscript%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.openurl</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>C445C4D5-374B-481D-95F1-691A919E77A6</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>632883AC-B9F4-4A75-8191-87B8448E6336</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>C5F56922-625E-4ED0-B144-6D6A2E3CB498</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>F366B36C-E238-42C5-9125-965799AF24C7</string>
+				<key>WFCondition</key>
+				<integer>4</integer>
+				<key>WFConditionalActionString</key>
+				<string>PosterBoard</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Type</key>
+							<string>Variable</string>
+							<key>VariableName</key>
+							<string>Input</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.notification</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>C8EBC407-2D91-4F07-BF0B-62DA4005B96B</string>
+				<key>WFNotificationActionBody</key>
+				<string>Installing...</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>E58D222C-B02C-4FC0-8014-D71EC46ED3CB</string>
+				<key>WFTextActionText</key>
+				<string>Open PosterBoard</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>A7B0628B-F069-4EDE-8F54-401872A7A40D</string>
+				<key>WFTextActionText</key>
+				<string>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+	&lt;key&gt;WFQuickActionSurfaces&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowActions&lt;/key&gt;
+	&lt;array&gt;
+		&lt;dict&gt;
+			&lt;key&gt;WFWorkflowActionIdentifier&lt;/key&gt;
+			&lt;string&gt;is.workflow.actions.openapp&lt;/string&gt;
+			&lt;key&gt;WFWorkflowActionParameters&lt;/key&gt;
+			&lt;dict&gt;
+				&lt;key&gt;WFAppIdentifier&lt;/key&gt;
+				&lt;string&gt;com.apple.Poster-Board&lt;/string&gt;
+				&lt;key&gt;WFSelectedApp&lt;/key&gt;
+				&lt;dict&gt;
+					&lt;key&gt;BundleIdentifier&lt;/key&gt;
+					&lt;string&gt;com.apple.Poster-Board&lt;/string&gt;
+					&lt;key&gt;Name&lt;/key&gt;
+					&lt;string&gt;PosterBoard&lt;/string&gt;
+					&lt;key&gt;TeamIdentifier&lt;/key&gt;
+					&lt;string&gt;0000000000&lt;/string&gt;
+				&lt;/dict&gt;
+			&lt;/dict&gt;
+		&lt;/dict&gt;
+	&lt;/array&gt;
+	&lt;key&gt;WFWorkflowClientVersion&lt;/key&gt;
+	&lt;string&gt;5114.0.8.3&lt;/string&gt;
+	&lt;key&gt;WFWorkflowHasOutputFallback&lt;/key&gt;
+	&lt;false/&gt;
+	&lt;key&gt;WFWorkflowHasShortcutInputVariables&lt;/key&gt;
+	&lt;false/&gt;
+	&lt;key&gt;WFWorkflowIcon&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;WFWorkflowIconGlyphNumber&lt;/key&gt;
+		&lt;integer&gt;61440&lt;/integer&gt;
+		&lt;key&gt;WFWorkflowIconStartColor&lt;/key&gt;
+		&lt;integer&gt;-12365313&lt;/integer&gt;
+	&lt;/dict&gt;
+	&lt;key&gt;WFWorkflowImportQuestions&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowInputContentItemClasses&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;WFAppStoreAppContentItem&lt;/string&gt;
+		&lt;string&gt;WFArticleContentItem&lt;/string&gt;
+		&lt;string&gt;WFContactContentItem&lt;/string&gt;
+		&lt;string&gt;WFDateContentItem&lt;/string&gt;
+		&lt;string&gt;WFEmailAddressContentItem&lt;/string&gt;
+		&lt;string&gt;WFFolderContentItem&lt;/string&gt;
+		&lt;string&gt;WFGenericFileContentItem&lt;/string&gt;
+		&lt;string&gt;WFImageContentItem&lt;/string&gt;
+		&lt;string&gt;WFiTunesProductContentItem&lt;/string&gt;
+		&lt;string&gt;WFLocationContentItem&lt;/string&gt;
+		&lt;string&gt;WFDCMapsLinkContentItem&lt;/string&gt;
+		&lt;string&gt;WFAVAssetContentItem&lt;/string&gt;
+		&lt;string&gt;WFPDFContentItem&lt;/string&gt;
+		&lt;string&gt;WFPhoneNumberContentItem&lt;/string&gt;
+		&lt;string&gt;WFRichTextContentItem&lt;/string&gt;
+		&lt;string&gt;WFSafariWebPageContentItem&lt;/string&gt;
+		&lt;string&gt;WFStringContentItem&lt;/string&gt;
+		&lt;string&gt;WFURLContentItem&lt;/string&gt;
+	&lt;/array&gt;
+	&lt;key&gt;WFWorkflowMinimumClientVersion&lt;/key&gt;
+	&lt;integer&gt;900&lt;/integer&gt;
+	&lt;key&gt;WFWorkflowMinimumClientVersionString&lt;/key&gt;
+	&lt;string&gt;900&lt;/string&gt;
+	&lt;key&gt;WFWorkflowOutputContentItemClasses&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowTypes&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;Watch&lt;/string&gt;
+		&lt;string&gt;WFWorkflowTypeShowInSearch&lt;/string&gt;
+	&lt;/array&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.downloadurl</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>ShowHeaders</key>
+				<false/>
+				<key>UUID</key>
+				<string>4E2B66B9-0D2D-430A-B9D3-9A88430B835A</string>
+				<key>WFHTTPBodyType</key>
+				<string>JSON</string>
+				<key>WFHTTPHeaders</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFDictionaryFieldValueItems</key>
+						<array>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>Content-Type</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>application/json</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFDictionaryFieldValue</string>
+				</dict>
+				<key>WFHTTPMethod</key>
+				<string>POST</string>
+				<key>WFJSONValues</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFDictionaryFieldValueItems</key>
+						<array>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>shortcutName</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>Text</string>
+												<key>OutputUUID</key>
+												<string>E58D222C-B02C-4FC0-8014-D71EC46ED3CB</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>&#xFFFC;</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>shortcut</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>Text</string>
+												<key>OutputUUID</key>
+												<string>A7B0628B-F069-4EDE-8F54-401872A7A40D</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>&#xFFFC;</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFDictionaryFieldValue</string>
+				</dict>
+				<key>WFURL</key>
+				<string>https://free-sign.wasmer.app/api/sign/</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setitemname</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>F72EC429-4659-4B55-A2B0-6B9808AC7B2C</string>
+				<key>WFDontIncludeFileExtension</key>
+				<false/>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Contents of URL</string>
+						<key>OutputUUID</key>
+						<string>4E2B66B9-0D2D-430A-B9D3-9A88430B835A</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFName</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Text</string>
+								<key>OutputUUID</key>
+								<string>E58D222C-B02C-4FC0-8014-D71EC46ED3CB</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>&#xFFFC;.shortcut</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.openin</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Renamed Item</string>
+						<key>OutputUUID</key>
+						<string>F72EC429-4659-4B55-A2B0-6B9808AC7B2C</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFOpenInAppIdentifier</key>
+				<string>com.apple.shortcuts</string>
+				<key>WFSelectedApp</key>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.shortcuts</string>
+					<key>Name</key>
+					<string>Shortcuts</string>
+					<key>TeamIdentifier</key>
+					<string>0000000000</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.notification</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>FDC72056-4777-4C9A-89D5-8B5B39006F3B</string>
+				<key>WFNotificationActionBody</key>
+				<string>You must add this shortcut to your Home Screen for it to work.</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>F366B36C-E238-42C5-9125-965799AF24C7</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>3AA82569-1CB6-43BC-A802-AEBCC9A510E9</string>
+				<key>WFCondition</key>
+				<integer>4</integer>
+				<key>WFConditionalActionString</key>
+				<string>Edit Website</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Type</key>
+							<string>Variable</string>
+							<key>VariableName</key>
+							<string>Input</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.notification</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>5EC65E19-03DE-45B0-BEC6-B68B22DFC1F7</string>
+				<key>WFNotificationActionBody</key>
+				<string>Installing...</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>3750424C-8A53-4CBA-A5E1-50BEEFBDC61E</string>
+				<key>WFTextActionText</key>
+				<string>Edit Webpage</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>BF917637-F8C0-4400-8A67-A32D4DA2FF4B</string>
+				<key>WFTextActionText</key>
+				<string>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+	&lt;key&gt;WFQuickActionSurfaces&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowActions&lt;/key&gt;
+	&lt;array&gt;
+		&lt;dict&gt;
+			&lt;key&gt;WFWorkflowActionIdentifier&lt;/key&gt;
+			&lt;string&gt;is.workflow.actions.comment&lt;/string&gt;
+			&lt;key&gt;WFWorkflowActionParameters&lt;/key&gt;
+			&lt;dict&gt;
+				&lt;key&gt;WFCommentActionText&lt;/key&gt;
+				&lt;string&gt;Run by going to a website, then clicking the share button, then click Stop Editing Webpage&lt;/string&gt;
+			&lt;/dict&gt;
+		&lt;/dict&gt;
+		&lt;dict&gt;
+			&lt;key&gt;WFWorkflowActionIdentifier&lt;/key&gt;
+			&lt;string&gt;is.workflow.actions.runjavascriptonwebpage&lt;/string&gt;
+			&lt;key&gt;WFWorkflowActionParameters&lt;/key&gt;
+			&lt;dict&gt;
+				&lt;key&gt;UUID&lt;/key&gt;
+				&lt;string&gt;A6B28884-58BB-4A49-9051-8C15FEF2C90A&lt;/string&gt;
+				&lt;key&gt;WFInput&lt;/key&gt;
+				&lt;dict&gt;
+					&lt;key&gt;Value&lt;/key&gt;
+					&lt;dict&gt;
+						&lt;key&gt;Type&lt;/key&gt;
+						&lt;string&gt;ExtensionInput&lt;/string&gt;
+					&lt;/dict&gt;
+					&lt;key&gt;WFSerializationType&lt;/key&gt;
+					&lt;string&gt;WFTextTokenAttachment&lt;/string&gt;
+				&lt;/dict&gt;
+				&lt;key&gt;WFJavaScript&lt;/key&gt;
+				&lt;string&gt;document.body.contentEditable = "true"; document.designMode = "on"
+
+completion();&lt;/string&gt;
+			&lt;/dict&gt;
+		&lt;/dict&gt;
+	&lt;/array&gt;
+	&lt;key&gt;WFWorkflowClientVersion&lt;/key&gt;
+	&lt;string&gt;5114.0.8.3&lt;/string&gt;
+	&lt;key&gt;WFWorkflowHasOutputFallback&lt;/key&gt;
+	&lt;false/&gt;
+	&lt;key&gt;WFWorkflowHasShortcutInputVariables&lt;/key&gt;
+	&lt;true/&gt;
+	&lt;key&gt;WFWorkflowIcon&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;WFWorkflowIconGlyphNumber&lt;/key&gt;
+		&lt;integer&gt;62321&lt;/integer&gt;
+		&lt;key&gt;WFWorkflowIconStartColor&lt;/key&gt;
+		&lt;integer&gt;255&lt;/integer&gt;
+	&lt;/dict&gt;
+	&lt;key&gt;WFWorkflowImportQuestions&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowInputContentItemClasses&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;WFAppStoreAppContentItem&lt;/string&gt;
+		&lt;string&gt;WFArticleContentItem&lt;/string&gt;
+		&lt;string&gt;WFContactContentItem&lt;/string&gt;
+		&lt;string&gt;WFDateContentItem&lt;/string&gt;
+		&lt;string&gt;WFEmailAddressContentItem&lt;/string&gt;
+		&lt;string&gt;WFGenericFileContentItem&lt;/string&gt;
+		&lt;string&gt;WFImageContentItem&lt;/string&gt;
+		&lt;string&gt;WFiTunesProductContentItem&lt;/string&gt;
+		&lt;string&gt;WFLocationContentItem&lt;/string&gt;
+		&lt;string&gt;WFDCMapsLinkContentItem&lt;/string&gt;
+		&lt;string&gt;WFAVAssetContentItem&lt;/string&gt;
+		&lt;string&gt;WFPDFContentItem&lt;/string&gt;
+		&lt;string&gt;WFPhoneNumberContentItem&lt;/string&gt;
+		&lt;string&gt;WFRichTextContentItem&lt;/string&gt;
+		&lt;string&gt;WFSafariWebPageContentItem&lt;/string&gt;
+		&lt;string&gt;WFStringContentItem&lt;/string&gt;
+		&lt;string&gt;WFURLContentItem&lt;/string&gt;
+	&lt;/array&gt;
+	&lt;key&gt;WFWorkflowMinimumClientVersion&lt;/key&gt;
+	&lt;integer&gt;900&lt;/integer&gt;
+	&lt;key&gt;WFWorkflowMinimumClientVersionString&lt;/key&gt;
+	&lt;string&gt;900&lt;/string&gt;
+	&lt;key&gt;WFWorkflowOutputContentItemClasses&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowTypes&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;ActionExtension&lt;/string&gt;
+		&lt;string&gt;NCWidget&lt;/string&gt;
+		&lt;string&gt;WFWorkflowTypeShowInSearch&lt;/string&gt;
+	&lt;/array&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.downloadurl</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>ShowHeaders</key>
+				<false/>
+				<key>UUID</key>
+				<string>BDCCC5F1-E5B1-45DE-9C8B-AFF92B4C5131</string>
+				<key>WFHTTPBodyType</key>
+				<string>JSON</string>
+				<key>WFHTTPHeaders</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFDictionaryFieldValueItems</key>
+						<array>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>Content-Type</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>application/json</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFDictionaryFieldValue</string>
+				</dict>
+				<key>WFHTTPMethod</key>
+				<string>POST</string>
+				<key>WFJSONValues</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFDictionaryFieldValueItems</key>
+						<array>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>shortcutName</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>Text</string>
+												<key>OutputUUID</key>
+												<string>3750424C-8A53-4CBA-A5E1-50BEEFBDC61E</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>&#xFFFC;</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>shortcut</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>Text</string>
+												<key>OutputUUID</key>
+												<string>BF917637-F8C0-4400-8A67-A32D4DA2FF4B</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>&#xFFFC;</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFDictionaryFieldValue</string>
+				</dict>
+				<key>WFURL</key>
+				<string>https://free-sign.wasmer.app/api/sign/</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setitemname</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>46025BB9-395A-477B-98E0-EF8290C4E134</string>
+				<key>WFDontIncludeFileExtension</key>
+				<false/>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Contents of URL</string>
+						<key>OutputUUID</key>
+						<string>BDCCC5F1-E5B1-45DE-9C8B-AFF92B4C5131</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFName</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Text</string>
+								<key>OutputUUID</key>
+								<string>3750424C-8A53-4CBA-A5E1-50BEEFBDC61E</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>&#xFFFC;.shortcut</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.openin</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Renamed Item</string>
+						<key>OutputUUID</key>
+						<string>46025BB9-395A-477B-98E0-EF8290C4E134</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFOpenInAppIdentifier</key>
+				<string>com.apple.shortcuts</string>
+				<key>WFSelectedApp</key>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.shortcuts</string>
+					<key>Name</key>
+					<string>Shortcuts</string>
+					<key>TeamIdentifier</key>
+					<string>0000000000</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.notification</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>8ABDF3BE-B31C-48D1-9003-3279A7A50827</string>
+				<key>WFNotificationActionBody</key>
+				<string>You must run this shortcut from the share sheet for it to work.</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.notification</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>BA73D433-94B9-408E-8CAF-6B2A95B47FED</string>
+				<key>WFNotificationActionBody</key>
+				<string>Installing...</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>B91F35F7-01D9-4BE8-9AD7-52DA5F420A31</string>
+				<key>WFTextActionText</key>
+				<string>Stop Editing Webpage</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>301F5ADF-440B-4287-B93B-93CD577C74AD</string>
+				<key>WFTextActionText</key>
+				<string>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+	&lt;key&gt;WFQuickActionSurfaces&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowActions&lt;/key&gt;
+	&lt;array&gt;
+		&lt;dict&gt;
+			&lt;key&gt;WFWorkflowActionIdentifier&lt;/key&gt;
+			&lt;string&gt;is.workflow.actions.comment&lt;/string&gt;
+			&lt;key&gt;WFWorkflowActionParameters&lt;/key&gt;
+			&lt;dict&gt;
+				&lt;key&gt;WFCommentActionText&lt;/key&gt;
+				&lt;string&gt;Run by going to a website, then clicking the share button, then click Stop Editing Webpage&lt;/string&gt;
+			&lt;/dict&gt;
+		&lt;/dict&gt;
+		&lt;dict&gt;
+			&lt;key&gt;WFWorkflowActionIdentifier&lt;/key&gt;
+			&lt;string&gt;is.workflow.actions.runjavascriptonwebpage&lt;/string&gt;
+			&lt;key&gt;WFWorkflowActionParameters&lt;/key&gt;
+			&lt;dict&gt;
+				&lt;key&gt;UUID&lt;/key&gt;
+				&lt;string&gt;A6B28884-58BB-4A49-9051-8C15FEF2C90A&lt;/string&gt;
+				&lt;key&gt;WFInput&lt;/key&gt;
+				&lt;dict&gt;
+					&lt;key&gt;Value&lt;/key&gt;
+					&lt;dict&gt;
+						&lt;key&gt;Type&lt;/key&gt;
+						&lt;string&gt;ExtensionInput&lt;/string&gt;
+					&lt;/dict&gt;
+					&lt;key&gt;WFSerializationType&lt;/key&gt;
+					&lt;string&gt;WFTextTokenAttachment&lt;/string&gt;
+				&lt;/dict&gt;
+				&lt;key&gt;WFJavaScript&lt;/key&gt;
+				&lt;string&gt;document.body.contentEditable = "false"; document.designMode = "off"
+
+completion();&lt;/string&gt;
+			&lt;/dict&gt;
+		&lt;/dict&gt;
+	&lt;/array&gt;
+	&lt;key&gt;WFWorkflowClientVersion&lt;/key&gt;
+	&lt;string&gt;5114.0.8.3&lt;/string&gt;
+	&lt;key&gt;WFWorkflowHasOutputFallback&lt;/key&gt;
+	&lt;false/&gt;
+	&lt;key&gt;WFWorkflowHasShortcutInputVariables&lt;/key&gt;
+	&lt;true/&gt;
+	&lt;key&gt;WFWorkflowIcon&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;WFWorkflowIconGlyphNumber&lt;/key&gt;
+		&lt;integer&gt;62321&lt;/integer&gt;
+		&lt;key&gt;WFWorkflowIconStartColor&lt;/key&gt;
+		&lt;integer&gt;255&lt;/integer&gt;
+	&lt;/dict&gt;
+	&lt;key&gt;WFWorkflowImportQuestions&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowInputContentItemClasses&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;WFAppStoreAppContentItem&lt;/string&gt;
+		&lt;string&gt;WFArticleContentItem&lt;/string&gt;
+		&lt;string&gt;WFContactContentItem&lt;/string&gt;
+		&lt;string&gt;WFDateContentItem&lt;/string&gt;
+		&lt;string&gt;WFEmailAddressContentItem&lt;/string&gt;
+		&lt;string&gt;WFGenericFileContentItem&lt;/string&gt;
+		&lt;string&gt;WFImageContentItem&lt;/string&gt;
+		&lt;string&gt;WFiTunesProductContentItem&lt;/string&gt;
+		&lt;string&gt;WFLocationContentItem&lt;/string&gt;
+		&lt;string&gt;WFDCMapsLinkContentItem&lt;/string&gt;
+		&lt;string&gt;WFAVAssetContentItem&lt;/string&gt;
+		&lt;string&gt;WFPDFContentItem&lt;/string&gt;
+		&lt;string&gt;WFPhoneNumberContentItem&lt;/string&gt;
+		&lt;string&gt;WFRichTextContentItem&lt;/string&gt;
+		&lt;string&gt;WFSafariWebPageContentItem&lt;/string&gt;
+		&lt;string&gt;WFStringContentItem&lt;/string&gt;
+		&lt;string&gt;WFURLContentItem&lt;/string&gt;
+	&lt;/array&gt;
+	&lt;key&gt;WFWorkflowMinimumClientVersion&lt;/key&gt;
+	&lt;integer&gt;900&lt;/integer&gt;
+	&lt;key&gt;WFWorkflowMinimumClientVersionString&lt;/key&gt;
+	&lt;string&gt;900&lt;/string&gt;
+	&lt;key&gt;WFWorkflowOutputContentItemClasses&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowTypes&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;ActionExtension&lt;/string&gt;
+		&lt;string&gt;NCWidget&lt;/string&gt;
+		&lt;string&gt;WFWorkflowTypeShowInSearch&lt;/string&gt;
+	&lt;/array&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.downloadurl</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>ShowHeaders</key>
+				<false/>
+				<key>UUID</key>
+				<string>F5567B32-1681-42DF-9898-603DD6635997</string>
+				<key>WFHTTPBodyType</key>
+				<string>JSON</string>
+				<key>WFHTTPHeaders</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFDictionaryFieldValueItems</key>
+						<array>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>Content-Type</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>application/json</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFDictionaryFieldValue</string>
+				</dict>
+				<key>WFHTTPMethod</key>
+				<string>POST</string>
+				<key>WFJSONValues</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFDictionaryFieldValueItems</key>
+						<array>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>shortcutName</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>Text</string>
+												<key>OutputUUID</key>
+												<string>B91F35F7-01D9-4BE8-9AD7-52DA5F420A31</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>&#xFFFC;</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>shortcut</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>Text</string>
+												<key>OutputUUID</key>
+												<string>301F5ADF-440B-4287-B93B-93CD577C74AD</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>&#xFFFC;</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFDictionaryFieldValue</string>
+				</dict>
+				<key>WFURL</key>
+				<string>https://free-sign.wasmer.app/api/sign/</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setitemname</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>4390A482-F50B-4C15-A47E-937FCAD13125</string>
+				<key>WFDontIncludeFileExtension</key>
+				<false/>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Contents of URL</string>
+						<key>OutputUUID</key>
+						<string>F5567B32-1681-42DF-9898-603DD6635997</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFName</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Text</string>
+								<key>OutputUUID</key>
+								<string>B91F35F7-01D9-4BE8-9AD7-52DA5F420A31</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>&#xFFFC;.shortcut</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.openin</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Renamed Item</string>
+						<key>OutputUUID</key>
+						<string>4390A482-F50B-4C15-A47E-937FCAD13125</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFOpenInAppIdentifier</key>
+				<string>com.apple.shortcuts</string>
+				<key>WFSelectedApp</key>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.shortcuts</string>
+					<key>Name</key>
+					<string>Shortcuts</string>
+					<key>TeamIdentifier</key>
+					<string>0000000000</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.notification</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>11B85C19-7813-4AF3-BC12-B9F6E2AC313D</string>
+				<key>WFNotificationActionBody</key>
+				<string>You must run this shortcut from the share sheet for it to work.</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>3AA82569-1CB6-43BC-A802-AEBCC9A510E9</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>36449E34-FA6E-4F7B-91B0-C9293A5A2515</string>
+				<key>WFCondition</key>
+				<integer>4</integer>
+				<key>WFConditionalActionString</key>
+				<string>Simple AdBlock</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Type</key>
+							<string>Variable</string>
+							<key>VariableName</key>
+							<string>Input</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.notification</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>D2A673BA-9639-4261-86F9-CC9C9DC88C7B</string>
+				<key>WFNotificationActionBody</key>
+				<string>Installing...</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>B6E746D1-D563-4E4D-AD79-C70E265F99B9</string>
+				<key>WFTextActionText</key>
+				<string>Simple AdBlock</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>97294FA2-C857-4DCF-8501-E3928738E42F</string>
+				<key>WFTextActionText</key>
+				<string>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+	&lt;key&gt;WFQuickActionSurfaces&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowActions&lt;/key&gt;
+	&lt;array&gt;
+		&lt;dict&gt;
+			&lt;key&gt;WFWorkflowActionIdentifier&lt;/key&gt;
+			&lt;string&gt;is.workflow.actions.runjavascriptonwebpage&lt;/string&gt;
+			&lt;key&gt;WFWorkflowActionParameters&lt;/key&gt;
+			&lt;dict&gt;
+				&lt;key&gt;UUID&lt;/key&gt;
+				&lt;string&gt;3D5B715E-0071-47E8-9935-2F8E3EF72400&lt;/string&gt;
+				&lt;key&gt;WFInput&lt;/key&gt;
+				&lt;dict&gt;
+					&lt;key&gt;Value&lt;/key&gt;
+					&lt;dict&gt;
+						&lt;key&gt;Type&lt;/key&gt;
+						&lt;string&gt;ExtensionInput&lt;/string&gt;
+					&lt;/dict&gt;
+					&lt;key&gt;WFSerializationType&lt;/key&gt;
+					&lt;string&gt;WFTextTokenAttachment&lt;/string&gt;
+				&lt;/dict&gt;
+				&lt;key&gt;WFJavaScript&lt;/key&gt;
+				&lt;string&gt;(() =&amp;gt; {
+  const CONFIG = {
+    watchMutations: true,
+    mutationDebounceMs: 250,
+    maxAutoScrollPasses: 2,
+    minOverlayWidthRatio: 0.65,
+    minOverlayHeightRatio: 0.45,
+    minOverlayZIndex: 15,
+    maxBannerHeightPx: 340,
+    minBannerWidthRatio: 0.6,
+    verboseLog: false
+  };
+
+  const state = {
+    removedCount: 0,
+    unlockedScroll: false,
+    observer: null,
+    debounceTimer: null
+  };
+
+  // Elements that look like overlays/banners but are usually legitimate site chrome
+  const SAFE_PROTECTED_SELECTORS = [
+    "header",
+    "nav",
+    "main",
+    "article",
+    "[role='main']",
+    "[role='navigation']",
+    "[role='banner']",
+    ".ytp-chrome-bottom",
+    ".video-js",
+    ".jwplayer"
+  ];
+
+  // 1. Broad CSS selectors for ads, trackers, widgets, cookies, and modals
+  const SELECTORS = {
+    ads: [
+      "[id*='google_ads']",
+      "[id*='div-gpt-ad']",
+      "[id^='ad_']",
+      "[id^='ad-']",
+      "[id*='-ad-']",
+      "[id*='_ad_']",
+      "[class*='ad-slot']",
+      "[class*='ad_slot']",
+      "[class*='ad-container']",
+      "[class*='ad_container']",
+      "[class*='ad-banner']",
+      "[class*='ad_banner']",
+      "[class*='ad-wrapper']",
+      "[class*='ad_wrapper']",
+      "[class*='ad-unit']",
+      "[class*='ad-placement']",
+      "[class*='advert']",
+      "[class*='sponsored']",
+      "[data-ad]",
+      "[data-ad-slot]",
+      "[data-testid*='ad']",
+      "[aria-label*='advertisement' i]",
+      "[aria-label*='sponsored' i]",
+      "ins.adsbygoogle",
+      "amp-ad",
+      "amp-embed",
+      "iframe[src*='doubleclick.net']",
+      "iframe[src*='googlesyndication.com']",
+      "iframe[src*='googleadservices.com']",
+      "iframe[src*='adservice']",
+      "iframe[src*='taboola.com']",
+      "iframe[src*='outbrain.com']",
+      "iframe[src*='criteo.com']",
+      "iframe[src*='pubmatic.com']",
+      "iframe[src*='rubiconproject.com']",
+      "iframe[src*='openx.net']",
+      "iframe[src*='amazon-adsystem.com']",
+      "iframe[id*='google_ads_iframe']"
+    ],
+
+    nativeWidgets: [
+      "[id*='taboola']",
+      "[class*='taboola']",
+      "[id*='outbrain']",
+      "[class*='outbrain']",
+      "[class*='OUTBRAIN']",
+      "[class*='revcontent']",
+      "[class*='mgid']",
+      "[class*='zergnet']",
+      "[class*='promoted-content']",
+      "[class*='recommended-for-you']"
+    ],
+
+    cookiesAndConsent: [
+      "[id*='cookie']",
+      "[class*='cookie']",
+      "[id*='consent']",
+      "[class*='consent']",
+      "[id*='gdpr']",
+      "[class*='gdpr']",
+      "[id*='ccpa']",
+      "[class*='privacy-banner']",
+      "[class*='privacy-modal']",
+      "[id*='onetrust']",
+      "[class*='onetrust']",
+      "[id*='CybotCookiebot']",
+      "[class*='Cookiebot']",
+      "[class*='qc-cmp2']",
+      "[class*='sp-message-container']",
+      "[class*='didomi']"
+    ],
+
+    modalsPaywallsAndNags: [
+      "[role='dialog'][aria-modal='true']",
+      "[class*='paywall']",
+      "[id*='paywall']",
+      "[class*='subscribe-wall']",
+      "[class*='regwall']",
+      "[class*='meter-wall']",
+      "[class*='newsletter-modal']",
+      "[class*='newsletter-popup']",
+      "[class*='exit-intent']",
+      "[class*='modal-backdrop']",
+      "[class*='backdrop-blur']",
+      "[class*='overlay-backdrop']",
+      "[class*='interstitial']",
+      "[class*='app-banner']",
+      "[class*='smartbanner']"
+    ]
+  };
+
+  const ALL_SELECTORS = [
+    ...SELECTORS.ads,
+    ...SELECTORS.nativeWidgets,
+    ...SELECTORS.cookiesAndConsent,
+    ...SELECTORS.modalsPaywallsAndNags
+  ];
+
+  const SUSPICIOUS_KEYWORDS = [
+    "cookie",
+    "consent",
+    "privacy preferences",
+    "accept all",
+    "manage preferences",
+    "subscribe now",
+    "sign in to continue",
+    "create a free account",
+    "disable your ad blocker",
+    "ad blocker",
+    "turn off adblock",
+    "sponsored",
+    "advertisement"
+  ];
+
+  const log = (...args) =&amp;gt; {
+    if (CONFIG.verboseLog) {
+      console.log("[Cleaner]", ...args);
+    }
+  };
+
+  const isProtectedElement = (el) =&amp;gt; {
+    if (!el || el === document.body || el === document.documentElement) {
+      return true;
+    }
+    // Protect if the element itself is a major content/nav container or contains the main article
+    if (SAFE_PROTECTED_SELECTORS.some((sel) =&amp;gt; el.matches?.(sel))) {
+      return true;
+    }
+    const mainEl = document.querySelector("main, article, [role='main']");
+    if (mainEl &amp;amp;&amp;amp; el.contains(mainEl) &amp;amp;&amp;amp; el !== mainEl) {
+      return true;
+    }
+    return false;
+  };
+
+  const isAlreadyHidden = (el) =&amp;gt; {
+    if (!el || el.dataset?.cleanerHidden === "1") return true;
+    const style = window.getComputedStyle(el);
+    return style.display === "none" || style.visibility === "hidden";
+  };
+
+  // Collapses empty wrapper boxes left behind after hiding ads
+  const collapseEmptyAdWrappers = (startEl) =&amp;gt; {
+    let current = startEl?.parentElement;
+    let steps = 0;
+
+    while (current &amp;amp;&amp;amp; steps &amp;lt; 4) {
+      if (isProtectedElement(current)) break;
+
+      const rect = current.getBoundingClientRect();
+      const hasVisibleText = (current.innerText || "").trim().length &amp;gt; 0;
+      const hasUnhiddenMedia = Array.from(
+        current.querySelectorAll("img, video, canvas, svg, picture")
+      ).some((child) =&amp;gt; {
+        const s = window.getComputedStyle(child);
+        const r = child.getBoundingClientRect();
+        return s.display !== "none" &amp;amp;&amp;amp; s.visibility !== "hidden" &amp;amp;&amp;amp; r.width &amp;gt; 20 &amp;amp;&amp;amp; r.height &amp;gt; 20;
+      });
+
+      const looksLikeEmptyAdBox =
+        !hasVisibleText &amp;amp;&amp;amp;
+        !hasUnhiddenMedia &amp;amp;&amp;amp;
+        rect.height &amp;gt; 0 &amp;amp;&amp;amp;
+        rect.height &amp;lt; 500 &amp;amp;&amp;amp;
+        /ad|sponsor|promo|banner|slot|wrapper|container/i.test(
+          `${current.id} ${current.className}`
+        );
+
+      if (looksLikeEmptyAdBox) {
+        current.style.setProperty("display", "none", "important");
+        current.dataset.cleanerHidden = "1";
+        current = current.parentElement;
+        steps += 1;
+      } else {
+        break;
+      }
+    }
+  };
+
+  const hideElement = (el, reason = "") =&amp;gt; {
+    if (!el || isProtectedElement(el) || isAlreadyHidden(el)) return false;
+
+    el.dataset.cleanerHidden = "1";
+    el.style.setProperty("display", "none", "important");
+    el.style.setProperty("visibility", "hidden", "important");
+    el.style.setProperty("opacity", "0", "important");
+    el.style.setProperty("pointer-events", "none", "important");
+    el.style.setProperty("max-height", "0px", "important");
+    el.style.setProperty("min-height", "0px", "important");
+    el.style.setProperty("margin", "0px", "important");
+    el.style.setProperty("padding", "0px", "important");
+
+    state.removedCount += 1;
+    log("Hidden:", reason, el);
+    collapseEmptyAdWrappers(el);
+    return true;
+  };
+
+  // Recursively collects elements across light DOM and open shadow roots
+  const collectAllElements = (root = document) =&amp;gt; {
+    const results = [];
+    const walk = (node) =&amp;gt; {
+      if (!node) return;
+      if (node.nodeType === Node.ELEMENT_NODE) {
+        results.push(node);
+        if (node.shadowRoot &amp;amp;&amp;amp; node.shadowRoot.mode === "open") {
+          Array.from(node.shadowRoot.children).forEach(walk);
+        }
+      }
+      if (node.children) {
+        Array.from(node.children).forEach(walk);
+      }
+    };
+    walk(root.body || root);
+    return results;
+  };
+
+  // 2. Selector pass
+  const cleanBySelectors = (allElements) =&amp;gt; {
+    for (const selector of ALL_SELECTORS) {
+      try {
+        // Query document plus any open shadow roots
+        const roots = [document];
+        for (const el of allElements) {
+          if (el.shadowRoot &amp;amp;&amp;amp; el.shadowRoot.mode === "open") {
+            roots.push(el.shadowRoot);
+          }
+        }
+
+        for (const root of roots) {
+          root.querySelectorAll(selector).forEach((el) =&amp;gt; {
+            // Avoid accidentally hiding huge wrappers that match generic terms like "consent" or "ad"
+            const rect = el.getBoundingClientRect();
+            const vh = window.innerHeight || 900;
+            const textLen = (el.innerText || "").trim().length;
+            const isGiantArticleContainer = rect.height &amp;gt; vh * 1.8 &amp;amp;&amp;amp; textLen &amp;gt; 1200;
+
+            if (!isGiantArticleContainer) {
+              hideElement(el, `selector:${selector}`);
+            }
+          });
+        }
+      } catch {
+        // Ignore invalid selector edge cases on exotic pages
+      }
+    }
+  };
+
+  // 3. Heuristic scoring for floating modals, backdrops, sticky bars, and nag boxes
+  const cleanFloatingOverlaysAndBanners = (allElements) =&amp;gt; {
+    const vw = window.innerWidth || document.documentElement.clientWidth;
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+
+    for (const el of allElements) {
+      if (isProtectedElement(el) || isAlreadyHidden(el)) continue;
+
+      const style = window.getComputedStyle(el);
+      const pos = style.position;
+      if (pos !== "fixed" &amp;amp;&amp;amp; pos !== "sticky") continue;
+
+      const rect = el.getBoundingClientRect();
+      if (rect.width &amp;lt;= 0 || rect.height &amp;lt;= 0) continue;
+
+      const zIndex = parseInt(style.zIndex, 10) || 0;
+      const widthRatio = rect.width / vw;
+      const heightRatio = rect.height / vh;
+      const coversMostOfScreen =
+        widthRatio &amp;gt;= CONFIG.minOverlayWidthRatio &amp;amp;&amp;amp;
+        heightRatio &amp;gt;= CONFIG.minOverlayHeightRatio;
+
+      const textSample = (el.innerText || "").slice(0, 600).toLowerCase();
+      const attrSample = `${el.id || ""} ${typeof el.className === "string" ? el.className : ""} ${el.getAttribute("role") || ""} ${el.getAttribute("aria-label") || ""}`.toLowerCase();
+
+      let score = 0;
+
+      // High z-index floating layers
+      if (zIndex &amp;gt;= 100) score += 2;
+      else if (zIndex &amp;gt;= CONFIG.minOverlayZIndex) score += 1;
+
+      // Full-screen or large central modal/backdrop
+      if (coversMostOfScreen &amp;amp;&amp;amp; zIndex &amp;gt;= CONFIG.minOverlayZIndex) {
+        score += 3;
+      }
+
+      // Dimmed backdrop / blur overlay
+      const bg = style.backgroundColor || "";
+      const hasSemiTransparentBackdrop =
+        /rgba\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*,\s*0?\.[2-9]/.test(bg) ||
+        (style.backdropFilter &amp;amp;&amp;amp; style.backdropFilter !== "none");
+
+      if (hasSemiTransparentBackdrop &amp;amp;&amp;amp; widthRatio &amp;gt;= 0.8 &amp;amp;&amp;amp; heightRatio &amp;gt;= 0.6) {
+        score += 2;
+      }
+
+      // Sticky/fixed top or bottom banner bars (like cookie bars or promo strips)
+      const isHorizontalBar =
+        widthRatio &amp;gt;= CONFIG.minBannerWidthRatio &amp;amp;&amp;amp;
+        rect.height &amp;gt; 24 &amp;amp;&amp;amp;
+        rect.height &amp;lt;= CONFIG.maxBannerHeightPx &amp;amp;&amp;amp;
+        (rect.top &amp;lt;= 40 || rect.bottom &amp;gt;= vh - 40);
+
+      if (isHorizontalBar &amp;amp;&amp;amp; zIndex &amp;gt;= 10) {
+        score += 1;
+      }
+
+      // Keyword signals in attributes or visible text
+      const matchedKeywords = SUSPICIOUS_KEYWORDS.filter(
+        (kw) =&amp;gt; textSample.includes(kw) || attrSample.includes(kw)
+      );
+      if (matchedKeywords.length &amp;gt; 0) {
+        score += Math.min(matchedKeywords.length, 3);
+      }
+
+      // Contains a close/dismiss button inside a modal-like box
+      const hasDismissControl = Boolean(
+        el.querySelector(
+          "button[aria-label*='close' i], button[aria-label*='dismiss' i], [class*='close-btn'], [class*='modal-close']"
+        )
+      );
+      if (hasDismissControl &amp;amp;&amp;amp; (coversMostOfScreen || isHorizontalBar)) {
+        score += 2;
+      }
+
+      // Guard against wiping out a legitimate sticky top navbar
+      const looksLikeLegitNavbar =
+        rect.top &amp;lt;= 10 &amp;amp;&amp;amp;
+        rect.height &amp;lt;= 95 &amp;amp;&amp;amp;
+        el.querySelectorAll("a").length &amp;gt;= 4 &amp;amp;&amp;amp;
+        matchedKeywords.length === 0 &amp;amp;&amp;amp;
+        !coversMostOfScreen;
+
+      if (looksLikeLegitNavbar) {
+        continue;
+      }
+
+      if (score &amp;gt;= 3) {
+        hideElement(el, `heuristic(score=${score},z=${zIndex})`);
+      }
+    }
+  };
+
+  // 4. Restore scrolling &amp;amp; remove scroll-lock classes without breaking layout
+  const restoreScrolling = () =&amp;gt; {
+    const roots = [document.documentElement, document.body].filter(Boolean);
+
+    const scrollLockClassPattern =
+      /(no-?scroll|modal-open|overflow-hidden|locked|scroll-lock|paywall-active|noscroll)/i;
+
+    for (const root of roots) {
+      root.style.setProperty("overflow", "auto", "important");
+      root.style.setProperty("overflow-x", "clip", "important");
+      root.style.setProperty("overflow-y", "auto", "important");
+      root.style.setProperty("height", "auto", "important");
+      root.style.setProperty("max-height", "none", "important");
+      root.style.setProperty("touch-action", "auto", "important");
+
+      // Only un-stick if a paywall forced fixed positioning on html/body
+      const currentPos = window.getComputedStyle(root).position;
+      if (currentPos === "fixed") {
+        root.style.setProperty("position", "static", "important");
+      }
+
+      if (root.classList &amp;amp;&amp;amp; root.classList.length &amp;gt; 0) {
+        Array.from(root.classList).forEach((cls) =&amp;gt; {
+          if (scrollLockClassPattern.test(cls)) {
+            root.classList.remove(cls);
+          }
+        });
+      }
+    }
+
+    state.unlockedScroll = true;
+  };
+
+  // 5. Optional observer for lazy-loaded popups &amp;amp; dynamically injected ads
+  const startObserver = () =&amp;gt; {
+    if (!CONFIG.watchMutations || state.observer || !document.body) return;
+
+    state.observer = new MutationObserver((mutations) =&amp;gt; {
+      let hasNewNodes = false;
+      for (const m of mutations) {
+        if (m.addedNodes &amp;amp;&amp;amp; m.addedNodes.length &amp;gt; 0) {
+          hasNewNodes = true;
+          break;
+        }
+      }
+      if (!hasNewNodes) return;
+
+      clearTimeout(state.debounceTimer);
+      state.debounceTimer = setTimeout(() =&amp;gt; {
+        runPass({ isFollowUp: true });
+      }, CONFIG.mutationDebounceMs);
+    });
+
+    state.observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  };
+
+  const runPass = ({ isFollowUp = false } = {}) =&amp;gt; {
+    const allElements = collectAllElements(document);
+    cleanBySelectors(allElements);
+    cleanFloatingOverlaysAndBanners(allElements);
+    restoreScrolling();
+
+    if (!isFollowUp) {
+      startObserver();
+    }
+  };
+
+  try {
+    runPass({ isFollowUp: false });
+
+    const summary = `Cleaned ${state.removedCount} ad/overlay element(s)${
+      state.unlockedScroll ? " and restored page scrolling" : ""
+    }.`;
+
+    if (typeof completion === "function") {
+      completion(summary);
+    } else {
+      return summary;
+    }
+  } catch (err) {
+    const errorMsg = "Ad cleaner error: " + (err?.message || String(err));
+    if (typeof completion === "function") {
+      completion(errorMsg);
+    } else {
+      console.error(errorMsg, err);
+    }
+  }
+})();&lt;/string&gt;
+			&lt;/dict&gt;
+		&lt;/dict&gt;
+		&lt;dict&gt;
+			&lt;key&gt;WFWorkflowActionIdentifier&lt;/key&gt;
+			&lt;string&gt;is.workflow.actions.notification&lt;/string&gt;
+			&lt;key&gt;WFWorkflowActionParameters&lt;/key&gt;
+			&lt;dict&gt;
+				&lt;key&gt;UUID&lt;/key&gt;
+				&lt;string&gt;99814B71-C270-4B5B-AC83-AF4841090F23&lt;/string&gt;
+				&lt;key&gt;WFNotificationActionBody&lt;/key&gt;
+				&lt;dict&gt;
+					&lt;key&gt;Value&lt;/key&gt;
+					&lt;dict&gt;
+						&lt;key&gt;attachmentsByRange&lt;/key&gt;
+						&lt;dict&gt;
+							&lt;key&gt;{0, 1}&lt;/key&gt;
+							&lt;dict&gt;
+								&lt;key&gt;OutputName&lt;/key&gt;
+								&lt;string&gt;JavaScript Result&lt;/string&gt;
+								&lt;key&gt;OutputUUID&lt;/key&gt;
+								&lt;string&gt;3D5B715E-0071-47E8-9935-2F8E3EF72400&lt;/string&gt;
+								&lt;key&gt;Type&lt;/key&gt;
+								&lt;string&gt;ActionOutput&lt;/string&gt;
+							&lt;/dict&gt;
+						&lt;/dict&gt;
+						&lt;key&gt;string&lt;/key&gt;
+						&lt;string&gt;&amp;#xFFFC;&lt;/string&gt;
+					&lt;/dict&gt;
+					&lt;key&gt;WFSerializationType&lt;/key&gt;
+					&lt;string&gt;WFTextTokenString&lt;/string&gt;
+				&lt;/dict&gt;
+			&lt;/dict&gt;
+		&lt;/dict&gt;
+	&lt;/array&gt;
+	&lt;key&gt;WFWorkflowClientVersion&lt;/key&gt;
+	&lt;string&gt;5114.0.8.3&lt;/string&gt;
+	&lt;key&gt;WFWorkflowHasOutputFallback&lt;/key&gt;
+	&lt;false/&gt;
+	&lt;key&gt;WFWorkflowHasShortcutInputVariables&lt;/key&gt;
+	&lt;true/&gt;
+	&lt;key&gt;WFWorkflowIcon&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;WFWorkflowIconGlyphNumber&lt;/key&gt;
+		&lt;integer&gt;62051&lt;/integer&gt;
+		&lt;key&gt;WFWorkflowIconStartColor&lt;/key&gt;
+		&lt;integer&gt;4251333119&lt;/integer&gt;
+	&lt;/dict&gt;
+	&lt;key&gt;WFWorkflowImportQuestions&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowInputContentItemClasses&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;WFAppContentItem&lt;/string&gt;
+		&lt;string&gt;WFAppStoreAppContentItem&lt;/string&gt;
+		&lt;string&gt;WFArticleContentItem&lt;/string&gt;
+		&lt;string&gt;WFContactContentItem&lt;/string&gt;
+		&lt;string&gt;WFDateContentItem&lt;/string&gt;
+		&lt;string&gt;WFEmailAddressContentItem&lt;/string&gt;
+		&lt;string&gt;WFFolderContentItem&lt;/string&gt;
+		&lt;string&gt;WFGenericFileContentItem&lt;/string&gt;
+		&lt;string&gt;WFImageContentItem&lt;/string&gt;
+		&lt;string&gt;WFiTunesProductContentItem&lt;/string&gt;
+		&lt;string&gt;WFLocationContentItem&lt;/string&gt;
+		&lt;string&gt;WFDCMapsLinkContentItem&lt;/string&gt;
+		&lt;string&gt;WFAVAssetContentItem&lt;/string&gt;
+		&lt;string&gt;WFPDFContentItem&lt;/string&gt;
+		&lt;string&gt;WFPhoneNumberContentItem&lt;/string&gt;
+		&lt;string&gt;WFRichTextContentItem&lt;/string&gt;
+		&lt;string&gt;WFSafariWebPageContentItem&lt;/string&gt;
+		&lt;string&gt;WFStringContentItem&lt;/string&gt;
+		&lt;string&gt;WFURLContentItem&lt;/string&gt;
+	&lt;/array&gt;
+	&lt;key&gt;WFWorkflowMinimumClientVersion&lt;/key&gt;
+	&lt;integer&gt;900&lt;/integer&gt;
+	&lt;key&gt;WFWorkflowMinimumClientVersionString&lt;/key&gt;
+	&lt;string&gt;900&lt;/string&gt;
+	&lt;key&gt;WFWorkflowOutputContentItemClasses&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowTypes&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;Watch&lt;/string&gt;
+		&lt;string&gt;ActionExtension&lt;/string&gt;
+		&lt;string&gt;WFWorkflowTypeShowInSearch&lt;/string&gt;
+	&lt;/array&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.downloadurl</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>ShowHeaders</key>
+				<false/>
+				<key>UUID</key>
+				<string>F5EE28D5-E117-4B8B-B272-4C9D9063C38D</string>
+				<key>WFHTTPBodyType</key>
+				<string>JSON</string>
+				<key>WFHTTPHeaders</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFDictionaryFieldValueItems</key>
+						<array>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>Content-Type</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>application/json</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFDictionaryFieldValue</string>
+				</dict>
+				<key>WFHTTPMethod</key>
+				<string>POST</string>
+				<key>WFJSONValues</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFDictionaryFieldValueItems</key>
+						<array>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>shortcutName</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>Text</string>
+												<key>OutputUUID</key>
+												<string>B6E746D1-D563-4E4D-AD79-C70E265F99B9</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>&#xFFFC;</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>shortcut</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>Text</string>
+												<key>OutputUUID</key>
+												<string>97294FA2-C857-4DCF-8501-E3928738E42F</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>&#xFFFC;</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFDictionaryFieldValue</string>
+				</dict>
+				<key>WFURL</key>
+				<string>https://free-sign.wasmer.app/api/sign/</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setitemname</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>B77F0FAA-7D90-485F-BF50-91DCDBA5B9A2</string>
+				<key>WFDontIncludeFileExtension</key>
+				<false/>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Contents of URL</string>
+						<key>OutputUUID</key>
+						<string>F5EE28D5-E117-4B8B-B272-4C9D9063C38D</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFName</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Text</string>
+								<key>OutputUUID</key>
+								<string>B6E746D1-D563-4E4D-AD79-C70E265F99B9</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>&#xFFFC;.shortcut</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.openin</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Renamed Item</string>
+						<key>OutputUUID</key>
+						<string>B77F0FAA-7D90-485F-BF50-91DCDBA5B9A2</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFOpenInAppIdentifier</key>
+				<string>com.apple.shortcuts</string>
+				<key>WFSelectedApp</key>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.shortcuts</string>
+					<key>Name</key>
+					<string>Shortcuts</string>
+					<key>TeamIdentifier</key>
+					<string>0000000000</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.notification</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>BFDA215B-733D-4887-B841-01138C7945D8</string>
+				<key>WFNotificationActionBody</key>
+				<string>You must run this shortcut from the share sheet for it to work.</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>36449E34-FA6E-4F7B-91B0-C9293A5A2515</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>5A439F4E-FAEE-404B-9FC7-7CBA571DFE02</string>
+				<key>WFCondition</key>
+				<integer>4</integer>
+				<key>WFConditionalActionString</key>
+				<string>Dark Mode</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Type</key>
+							<string>Variable</string>
+							<key>VariableName</key>
+							<string>Input</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.notification</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>C603E6C9-418E-40E4-854A-9A202C64D072</string>
+				<key>WFNotificationActionBody</key>
+				<string>Installing...</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>8BEC74E7-C05F-43EB-840D-4C4598823BE5</string>
+				<key>WFTextActionText</key>
+				<string>Dark Mode</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>E115CC65-9A76-45F4-ADDD-6C8D6C6638F4</string>
+				<key>WFTextActionText</key>
+				<string>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+	&lt;key&gt;WFQuickActionSurfaces&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowActions&lt;/key&gt;
+	&lt;array&gt;
+		&lt;dict&gt;
+			&lt;key&gt;WFWorkflowActionIdentifier&lt;/key&gt;
+			&lt;string&gt;is.workflow.actions.runjavascriptonwebpage&lt;/string&gt;
+			&lt;key&gt;WFWorkflowActionParameters&lt;/key&gt;
+			&lt;dict&gt;
+				&lt;key&gt;UUID&lt;/key&gt;
+				&lt;string&gt;9900B283-B0D3-4E3C-B3CC-9CDF8B47D972&lt;/string&gt;
+				&lt;key&gt;WFInput&lt;/key&gt;
+				&lt;dict&gt;
+					&lt;key&gt;Value&lt;/key&gt;
+					&lt;dict&gt;
+						&lt;key&gt;Type&lt;/key&gt;
+						&lt;string&gt;ExtensionInput&lt;/string&gt;
+					&lt;/dict&gt;
+					&lt;key&gt;WFSerializationType&lt;/key&gt;
+					&lt;string&gt;WFTextTokenAttachment&lt;/string&gt;
+				&lt;/dict&gt;
+				&lt;key&gt;WFJavaScript&lt;/key&gt;
+				&lt;string&gt;(() =&amp;gt; {
+  const STYLE_ID = 'ios-shortcut-dark-mode-style';
+  const BTN_ID = 'ios-shortcut-dark-mode-btn';
+
+  // If the button is already there, remove both button and dark mode (clean reset)
+  const existingBtn = document.getElementById(BTN_ID);
+  const existingStyle = document.getElementById(STYLE_ID);
+  if (existingBtn || existingStyle) {
+    if (existingBtn) existingBtn.remove();
+    if (existingStyle) existingStyle.remove();
+    completion('Dark mode button removed');
+    return;
+  }
+
+  let isDark = false;
+
+  const style = document.createElement('style');
+  style.id = STYLE_ID;
+  style.textContent = `
+    html.ios-dark-active {
+      filter: invert(0.92) hue-rotate(180deg) !important;
+      background-color: #121212 !important;
+      min-height: 100vh !important;
+    }
+
+    html.ios-dark-active img,
+    html.ios-dark-active video,
+    html.ios-dark-active picture,
+    html.ios-dark-active canvas,
+    html.ios-dark-active svg,
+    html.ios-dark-active iframe,
+    html.ios-dark-active [style*="background-image"] {
+      filter: invert(1) hue-rotate(180deg) !important;
+    }
+
+    #${BTN_ID} {
+      position: fixed !important;
+      right: 14px !important;
+      bottom: 18px !important;
+      z-index: 2147483647 !important;
+      width: 44px !important;
+      height: 44px !important;
+      border-radius: 999px !important;
+      border: 1px solid rgba(255, 255, 255, 0.22) !important;
+      background: rgba(24, 24, 27, 0.88) !important;
+      color: #f4f4f5 !important;
+      font-size: 18px !important;
+      line-height: 1 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      cursor: pointer !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      user-select: none !important;
+      -webkit-user-select: none !important;
+      -webkit-tap-highlight-color: transparent !important;
+    }
+
+    /* Counter-invert the button when dark mode is on so the icon stays crisp */
+    html.ios-dark-active #${BTN_ID} {
+      filter: invert(1) hue-rotate(180deg) !important;
+    }
+  `;
+
+  const btn = document.createElement('button');
+  btn.id = BTN_ID;
+  btn.type = 'button';
+  btn.title = 'Toggle Dark Mode';
+  btn.setAttribute('aria-label', 'Toggle Dark Mode');
+  btn.textContent = '🌙';
+
+  const setMode = (enableDark) =&amp;gt; {
+    isDark = enableDark;
+    document.documentElement.classList.toggle('ios-dark-active', isDark);
+    btn.textContent = isDark ? '☀️' : '🌙';
+  };
+
+  btn.addEventListener('click', (e) =&amp;gt; {
+    e.preventDefault();
+    e.stopPropagation();
+    setMode(!isDark);
+  });
+
+  // Start with dark mode enabled right away; tap button to toggle
+  setMode(true);
+
+  (document.head || document.documentElement).appendChild(style);
+  (document.body || document.documentElement).appendChild(btn);
+
+  completion('Dark mode button injected');
+})();&lt;/string&gt;
+			&lt;/dict&gt;
+		&lt;/dict&gt;
+		&lt;dict&gt;
+			&lt;key&gt;WFWorkflowActionIdentifier&lt;/key&gt;
+			&lt;string&gt;is.workflow.actions.notification&lt;/string&gt;
+			&lt;key&gt;WFWorkflowActionParameters&lt;/key&gt;
+			&lt;dict&gt;
+				&lt;key&gt;UUID&lt;/key&gt;
+				&lt;string&gt;62EE04C7-C12C-482D-8F32-7CAA35AEB82F&lt;/string&gt;
+				&lt;key&gt;WFNotificationActionBody&lt;/key&gt;
+				&lt;dict&gt;
+					&lt;key&gt;Value&lt;/key&gt;
+					&lt;dict&gt;
+						&lt;key&gt;attachmentsByRange&lt;/key&gt;
+						&lt;dict&gt;
+							&lt;key&gt;{0, 1}&lt;/key&gt;
+							&lt;dict&gt;
+								&lt;key&gt;OutputName&lt;/key&gt;
+								&lt;string&gt;JavaScript Result&lt;/string&gt;
+								&lt;key&gt;OutputUUID&lt;/key&gt;
+								&lt;string&gt;9900B283-B0D3-4E3C-B3CC-9CDF8B47D972&lt;/string&gt;
+								&lt;key&gt;Type&lt;/key&gt;
+								&lt;string&gt;ActionOutput&lt;/string&gt;
+							&lt;/dict&gt;
+						&lt;/dict&gt;
+						&lt;key&gt;string&lt;/key&gt;
+						&lt;string&gt;&amp;#xFFFC;&lt;/string&gt;
+					&lt;/dict&gt;
+					&lt;key&gt;WFSerializationType&lt;/key&gt;
+					&lt;string&gt;WFTextTokenString&lt;/string&gt;
+				&lt;/dict&gt;
+			&lt;/dict&gt;
+		&lt;/dict&gt;
+	&lt;/array&gt;
+	&lt;key&gt;WFWorkflowClientVersion&lt;/key&gt;
+	&lt;string&gt;5114.0.8.3&lt;/string&gt;
+	&lt;key&gt;WFWorkflowHasOutputFallback&lt;/key&gt;
+	&lt;false/&gt;
+	&lt;key&gt;WFWorkflowHasShortcutInputVariables&lt;/key&gt;
+	&lt;true/&gt;
+	&lt;key&gt;WFWorkflowIcon&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;WFWorkflowIconGlyphNumber&lt;/key&gt;
+		&lt;integer&gt;61991&lt;/integer&gt;
+		&lt;key&gt;WFWorkflowIconStartColor&lt;/key&gt;
+		&lt;integer&gt;255&lt;/integer&gt;
+	&lt;/dict&gt;
+	&lt;key&gt;WFWorkflowImportQuestions&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowInputContentItemClasses&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;WFAppContentItem&lt;/string&gt;
+		&lt;string&gt;WFAppStoreAppContentItem&lt;/string&gt;
+		&lt;string&gt;WFArticleContentItem&lt;/string&gt;
+		&lt;string&gt;WFContactContentItem&lt;/string&gt;
+		&lt;string&gt;WFDateContentItem&lt;/string&gt;
+		&lt;string&gt;WFEmailAddressContentItem&lt;/string&gt;
+		&lt;string&gt;WFFolderContentItem&lt;/string&gt;
+		&lt;string&gt;WFGenericFileContentItem&lt;/string&gt;
+		&lt;string&gt;WFImageContentItem&lt;/string&gt;
+		&lt;string&gt;WFiTunesProductContentItem&lt;/string&gt;
+		&lt;string&gt;WFLocationContentItem&lt;/string&gt;
+		&lt;string&gt;WFDCMapsLinkContentItem&lt;/string&gt;
+		&lt;string&gt;WFAVAssetContentItem&lt;/string&gt;
+		&lt;string&gt;WFPDFContentItem&lt;/string&gt;
+		&lt;string&gt;WFPhoneNumberContentItem&lt;/string&gt;
+		&lt;string&gt;WFRichTextContentItem&lt;/string&gt;
+		&lt;string&gt;WFSafariWebPageContentItem&lt;/string&gt;
+		&lt;string&gt;WFStringContentItem&lt;/string&gt;
+		&lt;string&gt;WFURLContentItem&lt;/string&gt;
+	&lt;/array&gt;
+	&lt;key&gt;WFWorkflowMinimumClientVersion&lt;/key&gt;
+	&lt;integer&gt;900&lt;/integer&gt;
+	&lt;key&gt;WFWorkflowMinimumClientVersionString&lt;/key&gt;
+	&lt;string&gt;900&lt;/string&gt;
+	&lt;key&gt;WFWorkflowOutputContentItemClasses&lt;/key&gt;
+	&lt;array/&gt;
+	&lt;key&gt;WFWorkflowTypes&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;ActionExtension&lt;/string&gt;
+		&lt;string&gt;WFWorkflowTypeShowInSearch&lt;/string&gt;
+	&lt;/array&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.downloadurl</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>ShowHeaders</key>
+				<false/>
+				<key>UUID</key>
+				<string>8F3D0FE8-EE1C-403B-85A5-4487D6EBE03D</string>
+				<key>WFHTTPBodyType</key>
+				<string>JSON</string>
+				<key>WFHTTPHeaders</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFDictionaryFieldValueItems</key>
+						<array>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>Content-Type</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>application/json</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFDictionaryFieldValue</string>
+				</dict>
+				<key>WFHTTPMethod</key>
+				<string>POST</string>
+				<key>WFJSONValues</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFDictionaryFieldValueItems</key>
+						<array>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>shortcutName</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>Text</string>
+												<key>OutputUUID</key>
+												<string>8BEC74E7-C05F-43EB-840D-4C4598823BE5</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>&#xFFFC;</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>WFItemType</key>
+								<integer>0</integer>
+								<key>WFKey</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>string</key>
+										<string>shortcut</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+								<key>WFValue</key>
+								<dict>
+									<key>Value</key>
+									<dict>
+										<key>attachmentsByRange</key>
+										<dict>
+											<key>{0, 1}</key>
+											<dict>
+												<key>OutputName</key>
+												<string>Text</string>
+												<key>OutputUUID</key>
+												<string>E115CC65-9A76-45F4-ADDD-6C8D6C6638F4</string>
+												<key>Type</key>
+												<string>ActionOutput</string>
+											</dict>
+										</dict>
+										<key>string</key>
+										<string>&#xFFFC;</string>
+									</dict>
+									<key>WFSerializationType</key>
+									<string>WFTextTokenString</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFDictionaryFieldValue</string>
+				</dict>
+				<key>WFURL</key>
+				<string>https://free-sign.wasmer.app/api/sign/</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setitemname</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>6839E989-A398-4EB3-8630-6B405E526808</string>
+				<key>WFDontIncludeFileExtension</key>
+				<false/>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Contents of URL</string>
+						<key>OutputUUID</key>
+						<string>8F3D0FE8-EE1C-403B-85A5-4487D6EBE03D</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFName</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Text</string>
+								<key>OutputUUID</key>
+								<string>8BEC74E7-C05F-43EB-840D-4C4598823BE5</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>&#xFFFC;.shortcut</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.openin</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Renamed Item</string>
+						<key>OutputUUID</key>
+						<string>6839E989-A398-4EB3-8630-6B405E526808</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFOpenInAppIdentifier</key>
+				<string>com.apple.shortcuts</string>
+				<key>WFSelectedApp</key>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.shortcuts</string>
+					<key>Name</key>
+					<string>Shortcuts</string>
+					<key>TeamIdentifier</key>
+					<string>0000000000</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.notification</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>F6EAC88C-FC1C-41BB-9EDD-0A5E1206A7D5</string>
+				<key>WFNotificationActionBody</key>
+				<string>You must run this shortcut from the share sheet for it to work.</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>5A439F4E-FAEE-404B-9FC7-7CBA571DFE02</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>5A439F4E-FAEE-404B-9FC7-7CBA571DFE02</string>
+				<key>UUID</key>
+				<string>AE02FA4F-D03D-442F-BC2F-6BEC6A1F7109</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>36449E34-FA6E-4F7B-91B0-C9293A5A2515</string>
+				<key>UUID</key>
+				<string>F28C5D24-D651-4747-925B-C9E28C87F668</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>3AA82569-1CB6-43BC-A802-AEBCC9A510E9</string>
+				<key>UUID</key>
+				<string>9E39F3ED-A4A2-42CA-AF55-E54A0700CBCF</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>F366B36C-E238-42C5-9125-965799AF24C7</string>
+				<key>UUID</key>
+				<string>6E930073-8BFA-4843-8617-00CC61B31108</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>C5F56922-625E-4ED0-B144-6D6A2E3CB498</string>
+				<key>UUID</key>
+				<string>A26C92BD-C48A-4198-93A8-B0791E952440</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.output</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>B3DF90E6-DDF9-49EA-A9D9-964BBD528179</string>
+				<key>WFOutput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>If Result</string>
+								<key>OutputUUID</key>
+								<string>A26C92BD-C48A-4198-93A8-B0791E952440</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>&#xFFFC;</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>WFWorkflowClientVersion</key>
+	<string>5114.0.8.3</string>
+	<key>WFWorkflowHasOutputFallback</key>
+	<false/>
+	<key>WFWorkflowHasShortcutInputVariables</key>
+	<true/>
+	<key>WFWorkflowIcon</key>
+	<dict>
+		<key>WFWorkflowIconGlyphNumber</key>
+		<integer>59755</integer>
+		<key>WFWorkflowIconStartColor</key>
+		<integer>3031607807</integer>
+	</dict>
+	<key>WFWorkflowImportQuestions</key>
+	<array/>
+	<key>WFWorkflowInputContentItemClasses</key>
+	<array/>
+	<key>WFWorkflowMinimumClientVersion</key>
+	<integer>3010</integer>
+	<key>WFWorkflowMinimumClientVersionString</key>
+	<string>3010</string>
+	<key>WFWorkflowOutputContentItemClasses</key>
+	<array>
+		<string>WFDropboxItemContentItem</string>
+		<string>WFEmailAddressContentItem</string>
+		<string>WFLinkMetadataContentItem</string>
+		<string>WFStringContentItem</string>
+		<string>WFPhoneNumberContentItem</string>
+		<string>WFReminderContentItem</string>
+		<string>WFDCMapsLinkContentItem</string>
+		<string>WFAppStoreAppContentItem</string>
+		<string>WFURLContentItem</string>
+		<string>WFiTunesProductContentItem</string>
+		<string>WFRichTextContentItem</string>
+		<string>WFSafariWebPageContentItem</string>
+		<string>WFContactContentItem</string>
+		<string>WFPodcastEpisodeContentItem</string>
+		<string>WFGiphyContentItem</string>
+		<string>WFiTunesArtistContentItem</string>
+		<string>WFMKMapItemContentItem</string>
+		<string>WFArticleContentItem</string>
+		<string>WFCalendarEventContentItem</string>
+		<string>WFTrelloBoardContentItem</string>
+		<string>WFTrelloCardContentItem</string>
+		<string>WFPodcastShowContentItem</string>
+	</array>
+	<key>WFWorkflowTypes</key>
+	<array/>
+</dict>
+</plist>
